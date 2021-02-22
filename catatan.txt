@@ -1,0 +1,6 @@
+SELECT b.nm_mitra, b.jns_instansi, c.ket FROM kontrak a
+LEFT JOIN mitra b ON a.id_mitra = b.id_mitra 
+LEFT JOIN bayar c ON a.id_kontrak = c.id_kontrak 
+ORDER BY b.nm_mitra ASC
+
+SELECT b.nm_mitra, b.jns_instansi, c.ket FROM kontrak a LEFT JOIN mitra b ON a.id_mitra = b.id_mitra LEFT JOIN bayar c ON a.id_kontrak = c.id_kontrak ORDER BY b.nm_mitra ASC
